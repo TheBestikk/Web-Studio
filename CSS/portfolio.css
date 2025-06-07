@@ -61,7 +61,7 @@ ul{
     gap: 244px;
 }
 
-.header-right-side{
+.header-navigation{
     display: flex;
     align-items: center;
 }
@@ -71,7 +71,7 @@ ul{
     gap: 50px;
 }
 
-.nav-list{
+.header-list{
     display: flex;
     gap: 50px;
     margin-left: 93px;
@@ -88,14 +88,14 @@ ul{
     color: var(--logo-span);
 }
 
-.nav-link{
+.header-link{
     color: var(--primary-title);
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 14px;
 }
 
-.nav-link:hover{
+.header-link:hover{
     color: var(--hover-link);
 }
 
@@ -148,10 +148,13 @@ ul{
 
 .projects-list{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
     column-gap: 30px;
+}
+
+.projects-list-item{
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .projects-item-wrap{
