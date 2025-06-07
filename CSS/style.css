@@ -1,17 +1,17 @@
 :root{
     
-    --white: #fff;
-    --black: #000;
-    --backgroung-base: #fff;
-    --background-dark: #2F303A;
-    --background-dimmed: #F5F4FA;
+    --neutral-first: #fff;
+    --neutral-second: #000;
+    --background-first: #fff;
+    --background-second: #2F303A;
+    --background-third: #F5F4FA;
     --primary-text: #757575;
     --secondary-text: #FFFFFF;
     --primary-title: #212121;
     --secondary-title: #FFFFFF;
     --hover-link: #2196F3;
-    --btn-background-highlight: #2196F3;
-    --btn-color-light: #FFFFFF;
+    --btn-background-accent: #2196F3;
+    --btn-primary-color: #FFFFFF;
     --logo-span: #2196F3;
 
 }
@@ -76,7 +76,7 @@ ul{
 }
 
 .header-logo-link{
-    color: var(--black);
+    color: var(--neutral-second);
     font-weight: 700;
     font-size: 26px;
     font-family: var(--second-family);
@@ -112,7 +112,7 @@ ul{
 
 .banner{
     padding: 200px 0px;
-    background-color: var(--background-dark);
+    background-color: var(--background-second);
 }
 
 .banner-container{
@@ -122,7 +122,7 @@ ul{
 }
 
 .banner-title{
-    color: var(--white);
+    color: var(--secondary-text);
     font-family: var(--font-family);
     font-weight: 900;
     font-size: 44px;
@@ -134,11 +134,11 @@ ul{
 }
 
 .banner-btn{
-    color: var(--white);
+    color: var(--btn-primary-color);
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 16px;
-    background-color: var(--btn-background-highlight);
+    background-color: var(--btn-background-accent);
     border-radius: 4px;
     cursor: pointer;
     padding: 10px 32px;
@@ -208,7 +208,7 @@ ul{
 
 .team{
     padding: 94px 0px;
-    background-color: var(--background-dimmed);
+    background-color: var(--background-third);
 }
 
 .team-container{
@@ -235,7 +235,7 @@ ul{
 }
 
 .team-wrap{
-    background-color: var(--backgroung-base);
+    background-color: var(--backgroung-first);
     border-radius: 0 0 4px 4px;
     padding: 30px 62px;
 }
@@ -255,14 +255,14 @@ ul{
     font-weight: 400;
     font-size: 16px;
     text-align: center;
-    color: #757575;
+    color: var(--primary-text);
 }
 
 /* footer */
 
 .footer{
     padding: 60px 0px;
-    background-color: var(--background-dark);
+    background-color: var(--background-second);
 }
 
 .footer-container{
@@ -271,7 +271,7 @@ ul{
 }
 
 .footer-logo-link{
-    color: var(--white);
+    color: var(--neutral-first);
     font-weight: 700;
     font-size: 26px;
     font-family: var(--second-family);
@@ -292,7 +292,7 @@ ul{
 }
 
 .footer-item-address{
-    color: var(--white);
+    color: var(--secondary-text);
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
