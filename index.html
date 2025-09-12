@@ -59,7 +59,35 @@
         <div class="container banner-container">
           <h1 class="banner-title">Ефективні рішення для вашого бізнесу</h1>
 
-          <button type="button" class="banner-btn">Замовити послугу</button>
+          <button class="banner-btn" type="button"onclick="openModal()">Замовити послугу</button>
+
+          <script src="modal.js"></script>
+  <div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <button class="close" onclick="closeModal()">×</button>
+    <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+
+    <label class="label">Ім'я</label>
+    <input class="input" type="text" placeholder="">
+
+    <label class="label">Телефон</label>
+    <input class="input" type="tel" placeholder="">
+
+    <label class="label">Пошта</label>
+    <input class="input" type="email" placeholder="">
+
+    <label class="label">Коментар</label>
+    <textarea class="input" placeholder="Введіть текст"></textarea>
+
+    <div class="checkbox">
+      <input type="checkbox" id="agree" checked>
+      <label class="label-agree" for="agree">Погоджуюся з розсилкою та приймаю <a class="modal-link" href="#">Умови договору</a></label>
+    </div>
+
+    <button class="modal-button">Відправити</button>
+  </div>
+</div>
+        </div>
         </div>
       </section>
 
@@ -138,7 +166,7 @@
           <ul class="team-list">
             <li class="team-list-item">
               <img
-                src="./images/team-igor.jpg"
+                src="./images/team-igor.png"
                 alt="фото Ігоря"
                 class="team-wrap-img"
               />
@@ -152,7 +180,7 @@
 
             <li class="team-list-item">
               <img
-                src="./images/team-olga.jpg"
+                src="./images/team-olga.png"
                 alt="фото Ольги"
                 class="team-wrap-img"
               />
@@ -166,7 +194,7 @@
 
             <li class="team-list-item">
               <img
-                src="./images/team-mykola.jpg"
+                src="./images/team-mykola.png"
                 alt="фото Миколи"
                 class="team-wrap-img"
               />
@@ -180,7 +208,7 @@
 
             <li class="team-list-item">
               <img
-                src="./images/team-myhailo.jpg"
+                src="./images/team-myhailo.png"
                 alt="фото Михайла"
                 class="team-wrap-img"
               />
