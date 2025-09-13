@@ -124,6 +124,7 @@ ul{
 
 .projects-filter{
     display: flex;
+    justify-content: center;
     gap: 8px;
     margin-bottom: 50px;
 }
@@ -151,10 +152,6 @@ ul{
     flex-wrap: wrap;
     gap: 30px;
     column-gap: 30px;
-}
-
-.projects-item{
-    flex-basis: calc((100% - 60px) / 3);
 }
 
 .projects-item-wrap{
