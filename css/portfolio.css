@@ -122,7 +122,7 @@ ul{
     align-items: center;
 }
 
-.projects-list{
+.projects-filter{
     display: flex;
     gap: 8px;
     margin-bottom: 50px;
