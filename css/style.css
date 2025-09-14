@@ -12,6 +12,7 @@
   --btn-background-accent: #2196f3;
   --btn-primary-color: #ffffff;
   --logo-span: #2196f3;
+  --wrap-border: #eee;
 }
 
 :root {
@@ -94,9 +95,10 @@ ul {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 14px;
+  transition: 0.2s ease-in-out;
 }
 
-.header-link:hover {
+.header-link:hover, .header-link:focus {
   color: var(--hover-link);
 }
 
@@ -462,4 +464,5 @@ ul {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
+    font-style: normal;
 }
