@@ -83,7 +83,6 @@ ul {
   font-weight: 700;
   font-size: 26px;
   font-family: var(--second-family);
-  margin-right: 93px;
 }
 
 .header-logo-link > span {
@@ -282,6 +281,58 @@ ul {
   margin-bottom: 10px;
 }
 
+.about-item:nth-of-type(1)::before{
+  content: '';
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-image: url(../images/telescope.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-third);
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
+
+.about-item:nth-of-type(2)::before{
+  content: '';
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-image: url(../images/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-third);
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
+
+.about-item:nth-of-type(3)::before{
+  content: '';
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-image: url(../images/diagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-third);
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
+
+.about-item:nth-of-type(4)::before{
+  content: '';
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background-image: url(../images/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-third);
+  margin-bottom: 30px;
+  padding: 25px 100px;
+}
+
 .about-text {
   color: var(--primary-text);
   font-family: var(--font-family);
@@ -318,13 +369,17 @@ ul {
   background-color: var(--background-third);
 }
 
-.team-wrap-img {
+.team-img {
   width: 270px;
 }
 
 .team-list {
   display: flex;
   justify-content: space-between;
+}
+
+.team-item{
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
 .team-title {
@@ -342,7 +397,7 @@ ul {
   padding: 30px 62px;
 }
 
-.team-wrap-title {
+.team-subtitle {
   color: var(--primary-title);
   font-family: var(--font-family);
   font-weight: 500;
@@ -351,7 +406,7 @@ ul {
   margin-bottom: 10px;
 }
 
-.team-wrap-text {
+.team-name {
   color: var(--primary-text);
   font-family: var(--font-family);
   font-weight: 400;
@@ -373,7 +428,7 @@ ul {
 }
 
 .footer-logo-link{
-    color: var(--white);
+    color: var(--neutral-first);
     font-weight: 700;
     font-size: 26px;
     font-family: var(--second-family);
@@ -401,7 +456,7 @@ ul {
     font-style: normal;
 }
 
-.footer-mail, .footer-phone{
+.footer-link{
     color: var(--primary-text);
     font-family: var(--font-family);
     font-weight: 400;

@@ -51,63 +51,64 @@ ul{
 
 /* header */
 
-.header{
-    padding: 25px 0px;
+.header {
+  padding: 25px 0px;
 }
 
-.header-container{
-    display: flex;
-    align-items: center;
-    gap: 244px;
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.header-navigation{
-    display: flex;
-    align-items: center;
+.header-navigation {
+  display: flex;
+  align-items: center;
 }
 
-.header-list{
-    display: flex;
-    gap: 50px;
+.header-list {
+  display: flex;
+  gap: 50px;
 }
 
-.header-list{
-    display: flex;
-    gap: 50px;
-    margin-left: 93px;
+.header-info {
+  display: flex;
+  gap: 50px;
 }
 
-.header-logo-link{
-    color: var(--black);
-    font-weight: 700;
-    font-size: 26px;
-    font-family: var(--second-family);
+.header-logo-link {
+  color: var(--neutral-second);
+  font-weight: 700;
+  font-size: 26px;
+  font-family: var(--second-family);
 }
 
-.header-logo-link > span{
-    color: var(--logo-span);
+.header-logo-link > span {
+  color: var(--logo-span);
 }
 
-.header-link{
-    color: var(--primary-title);
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 14px;
+.header-link {
+  color: var(--primary-title);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
 }
 
-.header-link:hover{
-    color: var(--hover-link);
+.header-link:hover {
+  color: var(--hover-link);
 }
 
-.header-mail, .header-phone{
-    color: var(--primary-text);
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 14px;
+.header-mail,
+.header-phone {
+  color: var(--primary-text);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
 }
 
-.header-mail:hover, .header-phone:hover{
-    color: var(--hover-link);
+.header-mail:hover,
+.header-phone:hover {
+  color: var(--hover-link);
 }
 
 /* projects */
