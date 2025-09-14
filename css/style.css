@@ -117,7 +117,8 @@ ul {
 
 .banner {
   padding: 200px 0px;
-  background-image: url(../images/banner-bg.png);
+  background-size: cover;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/banner-bg.png);;
 }
 
 .banner-container {
