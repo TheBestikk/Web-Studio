@@ -4,15 +4,16 @@
   --background-first: #fff;
   --background-second: #2f303a;
   --background-third: #f5f4fa;
+  --background-accent: #2196f3;
   --primary-text: #757575;
   --secondary-text: #ffffff;
   --primary-title: #212121;
   --secondary-title: #ffffff;
   --hover-link: #2196f3;
-  --btn-background-accent: #2196f3;
   --btn-primary-color: #ffffff;
   --logo-span: #2196f3;
   --wrap-border: #eee;
+  --icon-first: #AFB1B8;
 }
 
 :root {
@@ -104,14 +105,31 @@ ul {
 
 .header-mail,
 .header-phone {
+  display: flex;
+  align-items: center;
   color: var(--primary-text);
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 14px;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-icon{
+  width: 18px;
+  height: 12px;
+  fill: currentColor;
+}
+
+.header-phone > .header-icon{
+  width: 10px;
+  height: 16px  ;
 }
 
 .header-mail:hover,
-.header-phone:hover {
+.header-phone:hover,
+.header-mail:focus,
+.header-phone:focus {
   color: var(--hover-link);
 }
 
@@ -146,7 +164,7 @@ ul {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 16px;
-  background-color: var(--btn-background-accent);
+  background-color: var(--background-accent);
   border-radius: 4px;
   cursor: pointer;
   padding: 10px 32px;
@@ -382,6 +400,8 @@ ul {
 }
 
 .team-item{
+  max-width: 270px;
+  max-height: 428px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -406,6 +426,7 @@ ul {
   font-weight: 500;
   font-size: 16px;
   text-align: center;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -416,6 +437,30 @@ ul {
   font-size: 16px;
   text-align: center;
   color: var(--primary-text);
+}
+
+.icon-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px 30px;
+  gap: 10px;
+}
+
+.icon-app{
+  width: 20px;
+  height: 20px;
+  max-width: 44px;
+  max-height: 44px;
+  fill: var(--icon-first);
+}
+
+.icon-app:hover{
+  fill: var(--neutral-first);
+  overflow: unset;
+  border-radius: 100px;
+  background-color: var(--background-accent);
+  padding: 12px;
 }
 
 /* footer */

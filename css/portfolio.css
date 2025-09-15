@@ -4,6 +4,7 @@
   --background-first: #fff;
   --background-second: #2f303a;
   --background-third: #f5f4fa;
+  --background-accent: #2196f3;
   --primary-text: #757575;
   --secondary-text: #ffffff;
   --primary-title: #212121;
@@ -13,6 +14,7 @@
   --btn-primary-color: #ffffff;
   --logo-span: #2196f3;
   --wrap-border: #eee;
+  --icon-first: #AFB1B8;
 }
 
 :root {
