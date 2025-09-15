@@ -289,7 +289,7 @@ ul {
   display: inline-block;
   width: 70px;
   height: 70px;
-  background-image: url(../images/telescope.svg);
+  background-image: url(../images/antenna.png);
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--background-third);
@@ -302,7 +302,7 @@ ul {
   display: inline-block;
   width: 70px;
   height: 70px;
-  background-image: url(../images/clock.svg);
+  background-image: url(../images/clock.png);
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--background-third);
@@ -315,7 +315,7 @@ ul {
   display: inline-block;
   width: 70px;
   height: 70px;
-  background-image: url(../images/diagram.svg);
+  background-image: url(../images/diagram.png);
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--background-third);
@@ -328,7 +328,7 @@ ul {
   display: inline-block;
   width: 70px;
   height: 70px;
-  background-image: url(../images/astronaut.svg);
+  background-image: url(../images/astronaut.png);
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--background-third);
