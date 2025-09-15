@@ -5,6 +5,7 @@
   --background-second: #2f303a;
   --background-third: #f5f4fa;
   --background-accent: #2196f3;
+  --background-opacity: rgba(255, 255, 255, 0.1);
   --primary-text: #757575;
   --secondary-text: #ffffff;
   --primary-title: #212121;
@@ -14,6 +15,7 @@
   --logo-span: #2196f3;
   --wrap-border: #eee;
   --icon-first: #AFB1B8;
+  --icon-second: #fff;
 }
 
 :root {
@@ -463,6 +465,39 @@ ul {
   padding: 12px;
 }
 
+/* client */
+
+.client{
+  padding: 94px 0px;
+}
+
+.client-list{
+  display: flex;
+  gap: 30px;
+}
+
+.client-title{
+  text-align: center;
+  color: var(--primary-title);
+  font-size: 36px;
+  font-weight: 700;
+  font-family: var(--font-family);
+  margin-bottom: 50px;
+}
+
+.client-icon{
+  fill: var(--icon-first);
+  width: 106px;
+  height: 60px;
+  border: var(--icon-first) solid 2px;
+  padding: 16px 32px;
+}
+
+.client-icon:hover{
+  fill: var(--hover-link);
+  border: var(--hover-link) solid 2px;
+}
+
 /* footer */
 
 .footer{
@@ -511,3 +546,38 @@ ul {
     font-size: 14px;
     font-style: normal;
 }
+
+.footer-subtitle{
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--secondary-title);
+  text-transform: uppercase;
+}
+
+.footer-social-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icon{
+  width: 20px;
+  height: 20px;
+  max-width: 44px;
+  max-height: 44px;
+  fill: var(--icon-second);
+  border-radius: 100px;
+  background-color: var(--background-opacity);
+  padding: 12px;
+  overflow: unset;
+}
+
+.social-icon:hover{
+  overflow: unset;
+  border-radius: 100px;
+  background-color: var(--background-accent);
+  padding: 12px;
+}
+
