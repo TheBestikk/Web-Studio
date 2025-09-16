@@ -6,6 +6,7 @@
   --background-third: #f5f4fa;
   --background-accent: #2196f3;
   --background-opacity: rgba(255, 255, 255, 0.1);
+  --background-second-opacity:  rgba(47, 48, 58, 0.8);
   --primary-text: #757575;
   --secondary-text: #ffffff;
   --primary-title: #212121;
@@ -384,6 +385,25 @@ ul {
   font-size: 36px;
   text-align: center;
   margin-bottom: 50px;
+}
+
+.work-item{
+  position: relative;
+}
+
+.work-desc{
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--secondary-text);
+  text-transform: uppercase;
+  text-align: center;
+  background-color: var(--background-second-opacity);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
 }
 
 /* team */
