@@ -98,7 +98,7 @@ ul {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 14px;
-  transition: 0.2s ease-in-out;
+  transition: all 0.3s ease;
 }
 
 .header-link:hover, .header-link:focus {
@@ -107,6 +107,7 @@ ul {
 
 .header-mail,
 .header-phone {
+  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   color: var(--primary-text);
@@ -450,6 +451,7 @@ ul {
 }
 
 .icon-app{
+  transition: all 0.3s ease;
   width: 20px;
   height: 20px;
   max-width: 44px;
@@ -486,6 +488,7 @@ ul {
 }
 
 .client-icon{
+  transition: all 0.3s ease;
   fill: var(--icon-first);
   width: 106px;
   height: 60px;
@@ -522,6 +525,11 @@ ul {
 }
 
 .footer-info{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--secondary-text);
+    font-style: normal;
     margin-top: 20px;
 }
 
@@ -553,6 +561,7 @@ ul {
   font-size: 14px;
   color: var(--secondary-title);
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .footer-social-list{
@@ -563,6 +572,7 @@ ul {
 }
 
 .social-icon{
+  transition: all 0.3s ease;
   width: 20px;
   height: 20px;
   max-width: 44px;
@@ -581,3 +591,8 @@ ul {
   padding: 12px;
 }
 
+.footer-main-list{
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
