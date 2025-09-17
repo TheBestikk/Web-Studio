@@ -13,12 +13,15 @@
   --primary-title: #212121;
   --secondary-title: #ffffff;
   --hover-link: #2196f3;
+  --btn-background-accent: #2196f3;
   --btn-primary-color: #ffffff;
   --logo-span: #2196f3;
   --wrap-border: #eee;
   --icon-first: #AFB1B8;
   --icon-second: #fff;
   --icon-third: #2196f3;
+  --input-opacity: rgba(255, 255, 255, 0.6);
+  --input-border-opacity: rgba(255, 255, 255, 0.3);
 }
 
 :root {
