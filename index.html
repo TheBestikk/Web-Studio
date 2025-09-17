@@ -68,28 +68,52 @@
         <script src="modal.js"></script>
         <div class="modal-overlay" id="modalOverlay">
           <div class="modal">
-            <button class="close" onclick="closeModal()">×</button>
+            <button class="close-button" onclick="closeModal()">
+              <svg class="close-icon">
+                <use href="./svg/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
             <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
-
-            <label class="label">Ім'я</label>
-            <input class="input" type="text" placeholder="">
-
-            <label class="label">Телефон</label>
-            <input class="input" type="tel" placeholder="">
-
-            <label class="label">Пошта</label>
-            <input class="input" type="email" placeholder="">
-
-            <label class="label">Коментар</label>
-            <textarea class="input" placeholder="Введіть текст"></textarea>
-
-            <div class="checkbox">
-              <input type="checkbox" id="agree" checked>
-              <label class="label-agree" for="agree">Погоджуюся з розсилкою та приймаю <a class="modal-link"
-                  href="#">Умови договору</a></label>
-            </div>
-
-            <button class="modal-button">Відправити</button>
+            <form class="contact-form">
+              <div class="form-group">
+                <label class="label" for="name">Ім'я</label>
+                <div class="input-wrapper">
+                  <input class="input" type="text" id="name" required>
+                  <svg class="input-icon">
+                    <use href="./svg/symbol-defs.svg#icon-modal-person"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="label" for="phone">Телефон</label>
+                <div class="input-wrapper">
+                  <input class="input" type="tel" id="phone" required>
+                  <svg class="input-icon">
+                    <use href="./svg/symbol-defs.svg#icon-modal-phone"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="label" for="email">Пошта</label>
+                <div class="input-wrapper">
+                  <input class="input" type="email" id="email" required>
+                  <svg class="input-icon">
+                    <use href="./svg/symbol-defs.svg#icon-modal-email"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="label" for="comment">Коментар</label>
+                <textarea class="textarea" id="comment" placeholder="Введіть текст"></textarea>
+              </div>
+              <div class="checkbox">
+                <label class="label-agree" for="agree">
+                  <input type="checkbox" id="agree" class="modal-checkbox">
+                  Погоджуюся з розсилкою та приймаю <a class="modal-link" href="#">Умови договору</a>
+                </label>
+              </div>
+              <button type="submit" class="modal-button">Відправити</button>
+            </form>
           </div>
         </div>
       </div>
@@ -169,28 +193,28 @@
 
             <ul class="icon-list">
               <li class="icon-item">
-                <a href="#" class="icon-link">
+                <a href="instagram.com" class="icon-link">
                   <svg class="icon-app">
                     <use href="./svg/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="icon-item">
-                <a href="#" class="icon-link">
+                <a href="twitter.com" class="icon-link">
                   <svg class="icon-app">
                     <use href="./svg/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="icon-item">
-                <a href="#" class="icon-link">
+                <a href="facebook.com" class="icon-link">
                   <svg class="icon-app">
                     <use href="./svg/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="icon-item">
-                <a href="#" class="icon-link">
+                <a href="linkedin.com" class="icon-link">
                   <svg class="icon-app">
                     <use href="./svg/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
@@ -210,28 +234,28 @@
 
             <ul class="icon-list">
               <li class="icon-item">
-                <a href="#" class="icon-link">
+                <a href="instagram.com" class="icon-link">
                   <svg class="icon-app">
                     <use href="./svg/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="icon-item">
-                <a href="#" class="icon-link">
+                <a href="twitter.com" class="icon-link">
                   <svg class="icon-app">
                     <use href="./svg/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="icon-item">
-                <a href="#" class="icon-link">
+                <a href="facebook.com" class="icon-link">
                   <svg class="icon-app">
                     <use href="./svg/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="icon-item">
-                <a href="#" class="icon-link">
+                <a href="linkedin.com" class="icon-link">
                   <svg class="icon-app">
                     <use href="./svg/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
@@ -251,28 +275,28 @@
 
             <ul class="icon-list">
               <li class="icon-item">
-                <a href="#" class="icon-link">
+                <a href="instagram.com" class="icon-link">
                   <svg class="icon-app">
                     <use href="./svg/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="icon-item">
-                <a href="#" class="icon-link">
+                <a href="twitter.com" class="icon-link">
                   <svg class="icon-app">
                     <use href="./svg/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="icon-item">
-                <a href="#" class="icon-link">
+                <a href="facebook.com" class="icon-link">
                   <svg class="icon-app">
                     <use href="./svg/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="icon-item">
-                <a href="#" class="icon-link">
+                <a href="linkedin.com" class="icon-link">
                   <svg class="icon-app">
                     <use href="./svg/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
@@ -292,28 +316,28 @@
 
             <ul class="icon-list">
               <li class="icon-item">
-                <a href="#" class="icon-link">
+                <a href="instagram.com" class="icon-link">
                   <svg class="icon-app">
                     <use href="./svg/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li class="icon-item">
-                <a href="#" class="icon-link">
+                <a href="twitter.com" class="icon-link">
                   <svg class="icon-app">
                     <use href="./svg/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
               <li class="icon-item">
-                <a href="#" class="icon-link">
+                <a href="facebook.com" class="icon-link">
                   <svg class="icon-app">
                     <use href="./svg/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
               <li class="icon-item">
-                <a href="#" class="icon-link">
+                <a href="linkedin.com" class="icon-link">
                   <svg class="icon-app">
                     <use href="./svg/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
@@ -384,17 +408,17 @@
       <ul class="footer-main-list">
         <li class="main-item">
           <a href="index.html" class="footer-logo-link"><span>Web</span>Studio</a>
-    
+
           <address class="footer-info">
             <ul class="footer-list">
               <li class="footer-item">
-                  м. Київ, пр-т Лесі Українки, 26
+                м. Київ, пр-т Лесі Українки, 26
               </li>
-    
+
               <li class="footer-item">
                 <a href="maito:info@devstudio.com" class="footer-link">info@devstudio.com</a>
               </li>
-    
+
               <li class="footer-item">
                 <a href="tel:+380961111111" class="footer-link">+38 096 111 11 11</a>
               </li>
@@ -405,28 +429,28 @@
           <h3 class="footer-subtitle">Приєднуйтесь</h3>
           <ul class="footer-social-list">
             <li class="social-item">
-              <a href="#" class="social-link">
+              <a href="instagram.com" class="social-link">
                 <svg class="social-icon">
                   <use href="./svg/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item">
-              <a href="#" class="social-link">
+              <a href="twitter.com" class="social-link">
                 <svg class="social-icon">
                   <use href="./svg/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item">
-              <a href="#" class="social-link">
+              <a href="facebook.com" class="social-link">
                 <svg class="social-icon">
                   <use href="./svg/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item">
-              <a href="#" class="social-link">
+              <a href="linkedin.com" class="social-link">
                 <svg class="social-icon">
                   <use href="./svg/symbol-defs.svg#icon-linkedin"></use>
                 </svg>

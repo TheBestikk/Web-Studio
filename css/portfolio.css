@@ -17,6 +17,8 @@
   --wrap-border: #eee;
   --icon-first: #AFB1B8;
   --icon-second: #fff;
+  --input-opacity: rgba(255, 255, 255, 0.6);
+  --input-border-opacity: rgba(255, 255, 255, 0.3);
 }
 
 :root {
@@ -34,6 +36,10 @@ body{
 .container{
     width: 1170px;
     margin: 0 auto;
+}
+
+button{
+  border: none;
 }
 
 a, p, ul, li, h1, h2, h3{
@@ -299,3 +305,40 @@ ul{
   gap: 70px;
   align-items: center;
 }
+
+.footer-form{
+  display: flex;
+  gap: 12px;
+}
+
+.btn-icon{
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.footer-btn{
+  display: flex;
+  align-items: center;
+  padding: 15px 28px;
+  color: var(--btn-primary-color);
+  background-color: var(--btn-background-accent);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-input{
+  padding: 15px 16px;
+  background-color: transparent;
+  border: 1px solid var(--input-border-opacity);
+  border-radius: 4px;
+  color: var(--input-opacity);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  width: 358px;
+}
+
