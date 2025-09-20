@@ -35,34 +35,14 @@ body {
   padding: 0px;
   margin: 0px;
   font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  font-family: var(--font-family);
 }
 
 .container {
   width: 1170px;
   margin: 0 auto;
-}
-
-button {
-  border: none;
-}
-
-a,
-p,
-ul,
-li,
-h1,
-h2,
-h3 {
-  padding: 0px;
-  margin: 0px;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
 }
 
 /* header */
@@ -74,7 +54,6 @@ ul {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .header-navigation {
@@ -89,7 +68,7 @@ ul {
 
 .header-info {
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 
 .header-logo-link {
@@ -97,6 +76,7 @@ ul {
   font-weight: 700;
   font-size: 26px;
   font-family: var(--second-family);
+  padding-right: 92px;
 }
 
 .header-logo-link > span {
@@ -105,9 +85,7 @@ ul {
 
 .header-link {
   color: var(--primary-title);
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 14px;
+  letter-spacing: 0.02em;
   transition: all 0.3s ease;
   position: relative;
 }
@@ -137,11 +115,8 @@ ul {
 .header-phone {
   transition: all 0.3s ease;
   display: flex;
-  align-items: center;
   color: var(--primary-text);
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 14px;
+  letter-spacing: 0.02em;
   align-items: center;
   gap: 10px;
 }
@@ -164,6 +139,12 @@ ul {
   color: var(--hover-link);
 }
 
+.header-wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 /* banner */
 
 .banner {
@@ -184,25 +165,26 @@ ul {
 
 .banner-title {
   color: var(--secondary-text);
-  font-family: var(--font-family);
   font-weight: 900;
   font-size: 44px;
   line-height: 136%;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  width: 696px;
   margin-bottom: 30px;
 }
 
 .banner-btn {
   color: var(--btn-primary-color);
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 16px;
+  letter-spacing: 0.06em;
   background-color: var(--background-accent);
   border-radius: 4px;
   cursor: pointer;
+  line-height: 187%;
   padding: 10px 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 /* modal banner */
@@ -215,7 +197,7 @@ ul {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
-  z-index: 1000;
+  z-index: 1;
   justify-content: center;
   align-items: center;
 }
@@ -262,11 +244,9 @@ ul {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  letter-spacing: 0.03em;
   text-align: center;
   color: var(--third-text);
   margin-bottom: 12px;
-  font-family: var(--font-family);
 }
 
 .form-group {
@@ -325,7 +305,6 @@ ul {
   padding: 12px;
 }
 
-/* Стилизация чекбокса */
 .checkbox {
   margin: 20px 0 30px;
   display: flex;
@@ -336,9 +315,7 @@ ul {
 .label-agree {
   display: flex;
   align-items: center;
-  font-size: 14px;
   color: var(--primary-text);
-  font-family: var(--font-family);
   cursor: pointer;
 }
 
@@ -392,9 +369,7 @@ ul {
 
 .about-title {
   color: var(--primary-title);
-  font-family: var(--font-family);
   font-weight: 700;
-  font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -453,11 +428,8 @@ ul {
 
 .about-text {
   color: var(--primary-text);
-  font-family: var(--font-family);
   font-weight: 400;
-  font-size: 14px;
   line-height: 171%;
-  width: 220px;
 }
 
 /* work */
@@ -473,7 +445,6 @@ ul {
 
 .work-title {
   color: var(--primary-title);
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 36px;
   text-align: center;
@@ -485,9 +456,7 @@ ul {
 }
 
 .work-desc {
-  font-family: var(--font-family);
   font-weight: 700;
-  font-size: 14px;
   color: var(--secondary-text);
   text-transform: uppercase;
   text-align: center;
@@ -518,13 +487,13 @@ ul {
 .team-item {
   max-width: 270px;
   max-height: 428px;
+  background-color: var(--background-first);
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 
 .team-title {
   color: var(--primary-title);
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 36px;
   text-align: center;
@@ -539,8 +508,6 @@ ul {
 
 .team-subtitle {
   color: var(--primary-title);
-  font-family: var(--font-family);
-  font-weight: 500;
   font-size: 16px;
   text-align: center;
   margin-top: 30px;
@@ -549,7 +516,6 @@ ul {
 
 .team-name {
   color: var(--primary-text);
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   text-align: center;
@@ -568,9 +534,8 @@ ul {
   transition: all 0.3s ease;
   width: 20px;
   height: 20px;
-  max-width: 44px;
-  max-height: 44px;
   fill: var(--icon-first);
+  padding: 12px;
 }
 
 .icon-app:hover {
@@ -578,7 +543,6 @@ ul {
   overflow: unset;
   border-radius: 100px;
   background-color: var(--background-accent);
-  padding: 12px;
 }
 
 /* client */
@@ -597,7 +561,6 @@ ul {
   color: var(--primary-title);
   font-size: 36px;
   font-weight: 700;
-  font-family: var(--font-family);
   margin-bottom: 50px;
 }
 
@@ -639,9 +602,7 @@ ul {
 }
 
 .footer-info {
-  font-family: var(--font-family);
   font-weight: 400;
-  font-size: 14px;
   color: var(--secondary-text);
   font-style: normal;
   margin-top: 20px;
@@ -655,24 +616,18 @@ ul {
 
 .footer-address {
   color: var(--neutral-first);
-  font-family: var(--font-family);
   font-weight: 400;
-  font-size: 14px;
   font-style: normal;
 }
 
 .footer-link {
   color: var(--primary-text);
-  font-family: var(--font-family);
   font-weight: 400;
-  font-size: 14px;
   font-style: normal;
 }
 
 .footer-subtitle {
-  font-family: var(--font-family);
   font-weight: 700;
-  font-size: 14px;
   color: var(--secondary-title);
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -728,9 +683,9 @@ ul {
   padding: 15px 28px;
   color: var(--btn-primary-color);
   background-color: var(--btn-background-accent);
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 16px;
+  letter-spacing: 0.06em;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -741,7 +696,6 @@ ul {
   border: 1px solid var(--input-border-opacity);
   border-radius: 4px;
   color: var(--input-opacity);
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   width: 358px;

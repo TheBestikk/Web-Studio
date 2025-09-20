@@ -4,48 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web-studio</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="css/portfolio.css" />
-  </head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet" />
+    </head>
   <body>
     <header class="header">
     <div class="container header-container">
       <a href="index.html" class="header-logo-link"><span>Web</span>Studio</a>
-      <nav class="header-navigation">
-        <ul class="header-list">
+      <div class="header-wrapper">
+        <nav class="header-navigation">
+          <ul class="header-list">
+            <li class="header-item">
+              <a class="header-link" href="index.html">Студія</a>
+            </li>
+  
+            <li class="header-item">
+              <a class="header-link" href="portfolio.html">Портфоліо</a>
+            </li>
+  
+            <li class="header-item">
+              <a class="header-link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+  
+  
+        <ul class="header-info">
           <li class="header-item">
-            <a class="header-link" href="index.html">Студія</a>
+            <a href="maito:info@devstudio.com" class="header-mail">
+              <svg class="header-icon">
+                <use href="./svg/symbol-defs.svg#icon-mail"></use>
+              </svg>
+              <span>info@devstudio.com</span>
+            </a>
           </li>
-
+  
           <li class="header-item">
-            <a class="header-link" href="portfolio.html">Портфоліо</a>
-          </li>
-
-          <li class="header-item">
-            <a class="header-link" href="#">Контакти</a>
+            <a href="tel:+380961111111" class="header-phone">
+              <svg class="header-icon">
+                <use href="./svg/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              <span>+38 096 111 11 11</span>
+            </a>
           </li>
         </ul>
-      </nav>
-
-
-      <ul class="header-info">
-        <li class="header-item">
-          <a href="maito:info@devstudio.com" class="header-mail">
-            <svg class="header-icon">
-              <use href="./svg/symbol-defs.svg#icon-mail"></use>
-            </svg>
-            <span>info@devstudio.com</span>
-          </a>
-        </li>
-
-        <li class="header-item">
-          <a href="tel:+380961111111" class="header-phone">
-            <svg class="header-icon">
-              <use href="./svg/symbol-defs.svg#icon-smartphone"></use>
-            </svg>
-            <span>+38 096 111 11 11</span>
-          </a>
-        </li>
-      </ul>
+      </div>
 
     </div>
   </header>

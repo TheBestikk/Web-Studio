@@ -33,34 +33,14 @@ body {
   padding: 0px;
   margin: 0px;
   font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  font-family: var(--font-family);
 }
 
 .container {
   width: 1170px;
   margin: 0 auto;
-}
-
-button {
-  border: none;
-}
-
-a,
-p,
-ul,
-li,
-h1,
-h2,
-h3 {
-  padding: 0px;
-  margin: 0px;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
 }
 
 /* header */
@@ -72,7 +52,6 @@ ul {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .header-navigation {
@@ -87,7 +66,7 @@ ul {
 
 .header-info {
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 
 .header-logo-link {
@@ -95,6 +74,7 @@ ul {
   font-weight: 700;
   font-size: 26px;
   font-family: var(--second-family);
+  padding-right: 92px;
 }
 
 .header-logo-link > span {
@@ -103,9 +83,7 @@ ul {
 
 .header-link {
   color: var(--primary-title);
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 14px;
+  letter-spacing: 0.02em;
   transition: all 0.3s ease;
   position: relative;
 }
@@ -115,11 +93,11 @@ ul {
   color: var(--hover-link);
 }
 
-.header-item:nth-of-type(2) > .header-link {
+.header-item:first-of-type > .header-link {
   color: var(--hover-link);
 }
 
-.header-item:nth-of-type(2) .header-link::after {
+.header-item:first-of-type .header-link::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -128,18 +106,15 @@ ul {
   background-color: var(--hover-link);
   border-radius: 2px;
   height: 4px;
-  width: 78px;
+  width: 48px;
 }
 
 .header-mail,
 .header-phone {
   transition: all 0.3s ease;
   display: flex;
-  align-items: center;
   color: var(--primary-text);
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 14px;
+  letter-spacing: 0.02em;
   align-items: center;
   gap: 10px;
 }
@@ -160,6 +135,12 @@ ul {
 .header-mail:focus,
 .header-phone:focus {
   color: var(--hover-link);
+}
+
+.header-wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 /* projects */
@@ -184,8 +165,6 @@ ul {
 .projects-btn {
   border: none;
   color: var(--primary-title);
-  font-family: var(--font-family);
-  font-weight: 500;
   font-size: 16px;
   text-align: center;
   padding: 6px 22px;
@@ -232,15 +211,14 @@ ul {
 
 .projects-title {
   color: var(--primary-title);
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 18px;
+  letter-spacing: 0.06em;
   margin-bottom: 4px;
 }
 
 .projects-mark {
   color: var(--primary-text);
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
 }
@@ -258,11 +236,9 @@ ul {
 }
 
 .overlay-desc {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 18px;
   line-height: 156%;
-  letter-spacing: 0.03em;
   color: var(--secondary-text);
   width: 322px;
 }
@@ -297,9 +273,7 @@ ul {
 }
 
 .footer-info {
-  font-family: var(--font-family);
   font-weight: 400;
-  font-size: 14px;
   color: var(--secondary-text);
   font-style: normal;
   margin-top: 20px;
@@ -313,24 +287,18 @@ ul {
 
 .footer-address {
   color: var(--neutral-first);
-  font-family: var(--font-family);
   font-weight: 400;
-  font-size: 14px;
   font-style: normal;
 }
 
 .footer-link {
   color: var(--primary-text);
-  font-family: var(--font-family);
   font-weight: 400;
-  font-size: 14px;
   font-style: normal;
 }
 
 .footer-subtitle {
-  font-family: var(--font-family);
   font-weight: 700;
-  font-size: 14px;
   color: var(--secondary-title);
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -386,9 +354,9 @@ ul {
   padding: 15px 28px;
   color: var(--btn-primary-color);
   background-color: var(--btn-background-accent);
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 16px;
+  letter-spacing: 0.06em;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -399,7 +367,6 @@ ul {
   border: 1px solid var(--input-border-opacity);
   border-radius: 4px;
   color: var(--input-opacity);
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   width: 358px;
