@@ -52,3 +52,6 @@ a {
 button {
 	box-sizing: border-box;
 }
+img {
+	display: inline-flex;
+}
