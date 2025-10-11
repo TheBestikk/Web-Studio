@@ -27,12 +27,14 @@
 /* main settings */
 
 body {
-  padding: 0px;
-  margin: 0px;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.03em;
   font-family: var(--font-family);
+}
+
+a {
+  display: inline-block;
 }
 
 .container {
@@ -176,7 +178,6 @@ body {
   letter-spacing: 0.06em;
   background-color: var(--background-accent);
   border-radius: 4px;
-  cursor: pointer;
   line-height: 187%;
   padding: 10px 32px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -359,7 +360,7 @@ body {
 
 .about-list {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .about-title {
@@ -480,8 +481,6 @@ body {
 }
 
 .team-item {
-  max-width: 270px;
-  max-height: 428px;
   background-color: var(--background-first);
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
@@ -551,6 +550,11 @@ body {
   gap: 30px;
 }
 
+.client-item {
+  box-sizing: border-box;
+  width: calc((100% - (30px * 5)) / 6); 
+}
+
 .client-title {
   text-align: center;
   color: var(--primary-title);
@@ -562,7 +566,7 @@ body {
 .client-icon {
   transition: all 0.3s ease;
   fill: var(--icon-first);
-  width: 106px;
+  width: 146px;
   height: 60px;
   border: var(--icon-first) solid 2px;
   padding: 16px 32px;

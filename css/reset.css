@@ -48,9 +48,15 @@ table {
 }
 a {
 	text-decoration: none;
+	display: inline-block;
 }
 button {
 	box-sizing: border-box;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: inherit;
+	letter-spacing: inherit;
+	font-weight: inherit;
 }
 img {
 	display: inline-flex;
