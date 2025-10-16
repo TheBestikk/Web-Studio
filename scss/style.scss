@@ -1,0 +1,13 @@
+@use './utils/variables';
+@use './base/reset';
+@use './base/global';
+
+@use './components/header';
+@use './components/banner';
+@use './components/modal';
+@use './components/about';
+@use './components/work';
+@use './components/team';
+@use './components/client';
+@use './components/projects';
+@use './components/footer';

@@ -1,0 +1,74 @@
+@use '../utils/variables' as *;
+
+.team {
+  padding: 94px 0px;
+  background-color: var(--background-third);
+}
+
+.team-img {
+  width: 270px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-item {
+  background-color: var(--background-first);
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.team-title {
+  color: var(--primary-title);
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team-wrap {
+  background-color: var(--background-first);
+  border-radius: 0 0 4px 4px;
+  padding: 30px 62px;
+}
+
+.team-subtitle {
+  color: var(--primary-title);
+  font-size: 16px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.team-name {
+  color: var(--primary-text);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: var(--primary-text);
+}
+
+.icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px 30px;
+  gap: 10px;
+}
+
+.icon-app {
+  transition: all 0.3s ease;
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-first);
+  padding: 12px;
+}
+
+.icon-app:hover {
+  fill: var(--neutral-first);
+  overflow: unset;
+  border-radius: 100px;
+  background-color: var(--background-accent);
+}

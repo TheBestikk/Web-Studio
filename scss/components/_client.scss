@@ -1,0 +1,38 @@
+@use '../utils/variables' as *;
+
+.client {
+  padding: 94px 0px;
+}
+
+.client-list {
+  display: flex;
+  gap: 30px;
+}
+
+.client-item {
+  box-sizing: border-box;
+  width: calc((100% - (30px * 5)) / 6); 
+}
+
+.client-title {
+  text-align: center;
+  color: var(--primary-title);
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.client-icon {
+  transition: all 0.3s ease;
+  fill: var(--icon-first);
+  width: 106px;
+  height: 60px;
+  border: var(--icon-first) solid 2px;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.client-icon:hover {
+  fill: var(--accent-color);
+  border: var(--accent-color) solid 2px;
+}

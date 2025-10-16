@@ -1,0 +1,101 @@
+@use '../utils/variables' as *;
+
+.header {
+  padding: 25px 0px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+  gap: 50px;
+}
+
+.header-info {
+  display: flex;
+  gap: 30px;
+}
+
+.header-logo-link {
+  color: var(--neutral-second);
+  font-weight: 700;
+  font-size: 26px;
+  font-family: var(--second-family);
+  padding-right: 92px;
+}
+
+.header-logo-link > span {
+  color: var(--accent-color);
+}
+
+.header-link {
+  color: var(--primary-title);
+  letter-spacing: 0.02em;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+
+.header__current-studio::after, .header__current-portfolio::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: -185%;
+  left: -3px;
+  background-color: var(--accent-color);
+  color: var(--accent-color);
+  border-radius: 2px;
+  height: 4px;
+  width: 48px;
+}
+
+.header__current-portfolio::after{
+  width: 78px;
+}
+
+.header-mail,
+.header-phone {
+  transition: all 0.3s ease;
+  display: flex;
+  color: var(--primary-text);
+  letter-spacing: 0.02em;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-icon {
+  width: 18px;
+  height: 12px;
+  fill: currentColor;
+}
+
+.header-phone > .header-icon {
+  width: 10px;
+  height: 16px;
+}
+
+.header-mail:hover,
+.header-phone:hover,
+.header-mail:focus,
+.header-phone:focus {
+  color: var(--accent-color);
+}
+
+.header-wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

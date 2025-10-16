@@ -1,0 +1,122 @@
+@use '../utils/variables' as *;
+
+.footer {
+  padding: 60px 0px;
+  background-color: var(--background-second);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo-link {
+  color: var(--neutral-first);
+  font-weight: 700;
+  font-size: 26px;
+  font-family: var(--second-family);
+}
+
+.footer-logo-link > span {
+  color: var(--accent-color);
+}
+
+.footer-info {
+  font-weight: 400;
+  color: var(--secondary-text);
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.footer-address {
+  color: var(--neutral-first);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-link {
+  color: var(--primary-text);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer-subtitle {
+  font-weight: 700;
+  color: var(--secondary-title);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icon {
+  transition: all 0.3s ease;
+  width: 20px;
+  height: 20px;
+  max-width: 44px;
+  max-height: 44px;
+  fill: var(--icon-second);
+  border-radius: 100px;
+  background-color: var(--background-opacity);
+  padding: 12px;
+  overflow: unset;
+}
+
+.social-icon:hover {
+  overflow: unset;
+  border-radius: 100px;
+  background-color: var(--background-accent);
+  padding: 12px;
+}
+
+.footer-main-list {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+
+.footer-form {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.footer-btn {
+  display: flex;
+  align-items: center;
+  padding: 15px 28px;
+  color: var(--secondary-text);
+  background-color: var(--background-accent);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-input {
+  padding: 15px 16px;
+  background-color: transparent;
+  border: 1px solid var(--input-border-opacity);
+  border-radius: 4px;
+  color: var(--input-opacity);
+  font-weight: 400;
+  font-size: 16px;
+  width: 358px;
+}
