@@ -90,9 +90,7 @@ button {
 }
 
 img {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
 }
 
 body {
@@ -773,6 +771,8 @@ body {
 }
 
 .projects-tab {
+  -ms-flex-preferred-size: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
@@ -879,10 +879,8 @@ body {
   gap: 9px;
 }
 
-.footer-address {
-  color: var(--neutral-first);
-  font-weight: 400;
-  font-style: normal;
+.footer-link:nth-of-type(1) {
+  color: var(--secondary-text);
 }
 
 .footer-link {
